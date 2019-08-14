@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-115292904-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Naoto Inoue - UTokyo </title>
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container" style="max-width: 900px;">
+<!-- 
+        <h4 class="text-center"><em><a href="http://cvpr2018.thecvf.com/">IEEE Conference on Computer Vision and Pattern
+                    Recognition (CVPR) 2018</a></em></h4>
+
+        <br> -->
+
+        <h2 class="text-center">Cross-Domain Weakly-Supervised Object Detection through Progressive Domain Adaptation
+        </h2>
+
+        <h3 class="text-center"><a href="https://naoto0804.github.io/">Naoto Inoue</a>, <a
+                href="https://www.hal.t.u-tokyo.ac.jp/~furuta/">Ryosuke Furuta</a>, <a
+                href="https://www.hal.t.u-tokyo.ac.jp/~yamasaki/index-e.html">Toshihiko Yamasaki</a>, <a
+                href="https://www.hal.t.u-tokyo.ac.jp/~aizawa/">Kiyoharu Aizawa</a></h3>
+
+        <h3 class="text-center">The University of Tokyo, Japan</h3>
+
+        <h3 class="text-center"><a href="https://arxiv.org/abs/1803.11365">[Paper]   </a><a
+            href="https://github.com/naoto0804/cross-domain-detection">   [Code/Dataset]</a></h3>
+
+        <br>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-7">
+                        <p class="text-center">
+                            <img src="teaser.png" class="img-rounded" height=250px>
+                        </p>
+                        <p class="text-center">Left: The situation we tackle. Right: Two methods that we propose to
+                            generate
+                            pseudo instance-level annotated samples. </p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-center"><img src="dets_watercolor.png"
+                                class="img-rounded" height=250px></p>
+                        <p class="text-center">The detection results in our Watercolor1k dataset.</p>
+                    </div>
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+        <h3>Abstract</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Can we detect common objects in a variety of image domains without instance-level annotations?
+                    In this paper, we present a framework for a novel task, cross-domain weakly supervised object
+                    detection,
+                    which addresses this question.
+                    For this study, we have access to images with instance-level annotations in a source domain (e.g.,
+                    natural image) and images with image-level annotations in a target domain (e.g., watercolor).
+                    In addition, all the target domain classes to be detected or a subset of them are in the source
+                    domain.
+                    Starting from a fully supervised object detector, which is pre-trained on the source domain, we
+                    propose
+                    a two-step progressive domain adaptation technique by fine-tuning the detector on two types of
+                    artificially and automatically generated samples.
+                    We test our methods on our newly collected datasets containing three image domains, and achieve an
+                    improvement of approximately 5 to 20 percentage points in terms of mean average precision (mAP)
+                    compared
+                    to the best-performing baselines.
+                </p>
+            </div>
+        </div>
+
+        <!-- <h3>Publication</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <ul>
+                    <li>Naoto Inoue, Ryosuke Furuta, Toshihiko Yamasaki, Kiyoharu Aizawa<br>
+                        <strong>Cross-Domain Weakly-Supervised Object Detection through Progressive Domain
+                            Adaptation</strong><br>
+                        <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR),</em> 2018.
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+
+        <h3>BibTeX</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <pre>@inproceedings{inoue_2018_cvpr,
+        author = {Inoue, Naoto and Furuta, Ryosuke and Yamasaki, Toshihiko and Aizawa, Kiyoharu},
+        title = {Cross-Domain Weakly-Supervised Object Detection Through Progressive Domain Adaptation},
+        booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+        month = {June},
+        year = {2018}
+    }</pre>
+            </div>
+        </div>
+
+        <h3>Acknowledgments</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    This work was partially supported by JST-CREST (JPMJCR1686) and Microsoft IJARC core13.
+                    N. Inoue is supported by GCL program of The Univ. of Tokyo by JSPS.
+                    R. Furuta is supported by the Grants-in-Aid for Scientific Research (16J07267) from JSPS.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

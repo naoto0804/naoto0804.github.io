@@ -1,0 +1,6 @@
+@inproceedings{InoueCVPR2018,
+  title={{Cross-Domain Weakly-Supervised Object Detection through Progressive Domain Adaptation}},
+  author={Naoto Inoue and Ryosuke Furuta and Toshihiko Yamasaki and Kiyoharu Aizawa},
+  booktitle={CVPR},
+  year={2018},
+}

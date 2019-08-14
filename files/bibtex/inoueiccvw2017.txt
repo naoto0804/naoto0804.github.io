@@ -1,0 +1,6 @@
+@inproceedings{InoueICCVW2017,
+  title={{Multi-Label Fashion Image Classification with Minimal Human Supervision}},
+  author={Naoto Inoue and Edgar Simo-Serra and Toshihiko Yamasaki and Hiroshi Ishikawa},
+  booktitle={ICCVW},
+  year={2017},
+}
