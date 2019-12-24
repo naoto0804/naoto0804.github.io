@@ -1,6 +1,0 @@
-@inproceedings{InouePG2019,
-  title={{Learning to Trace: Expressive Line Drawing Generation from Photographs}},
-  author={Naoto Inoue and Daichi Ito and Ning Xu and Jimei Yang and Brian Price and Toshihiko Yamasaki},
-  booktitle={Pacific Graphics},
-  year={2019},
-}

@@ -1,6 +1,0 @@
-@inproceedings{FurutaAAAI2019,
-  title={{Fully Convolutional Network with Multi-Step Reinforcement Learning for Image Processing}},
-  author={Ryosuke Furuta and Naoto Inoue and Toshihiko Yamasaki},
-  booktitle={AAAI},
-  year={2019},
-}
