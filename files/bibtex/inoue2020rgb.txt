@@ -2,9 +2,9 @@
   title={{RGB2AO: Ambient Occlusion Generation from RGB Images}},
   author={Inoue, Naoto and Ito, Daichi and Hold-Geoffroy, Yannick and Mai, Long and Price, Brian and Yamasaki, Toshihiko},
   booktitle={Computer Graphics Forum},
-  volume={X},
-  number={X},
-  pages={XX-XX},
+  volume={39},
+  number={2},
+  pages={451-462},
   year={2020},
   organization={Wiley Online Library}
 }
