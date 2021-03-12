@@ -1,5 +1,5 @@
 @article{inoue2021learning,
-  title={{Learning from Synthetic Shadows}},
+  title={{Learning from Synthetic Shadows for Shadow Detection and Removal}},
   author={Inoue, Naoto and Yamasaki, Toshihiko},
   journal={IEEE Transactions on Circuits and Systems for Video Technology},
   volume={X},
