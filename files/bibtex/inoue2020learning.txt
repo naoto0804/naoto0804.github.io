@@ -1,9 +1,9 @@
-@article{inoue2021learning,
+@article{inoue2020learning,
   title={{Learning from Synthetic Shadows for Shadow Detection and Removal}},
   author={Inoue, Naoto and Yamasaki, Toshihiko},
   journal={IEEE Transactions on Circuits and Systems for Video Technology},
   volume={X},
   number={X},
   pages={XX--XX},
-  year={2021},
+  year={2020},
 }
