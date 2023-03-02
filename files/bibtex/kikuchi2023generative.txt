@@ -1,7 +1,0 @@
-@inproceedings{kikuchi2023generative,
-  title={Generative Colorization of Structured Mobile Web Pages},
-  author={Kotaro Kikuchi, Naoto Inoue, Mayu Otani, Edgar Simo-Serra, and Kota Yamaguchi},
-  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
-  pages={XXX-XXX},
-  year={2023}
-}
