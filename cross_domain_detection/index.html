@@ -1,6 +1,28 @@
 <html>
 
-<head>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>CDWSOD</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="https://naoto0804.github.io/cross_domain_detection/dets_watercolor.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1695">
+    <meta property="og:image:height" content="1187">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://naoto0804.github.io/cross_domain_detection/"/>
+    <meta property="og:title" content="Cross-Domain Weakly-Supervised Object Detection through Progressive Domain Adaptation" />
+    <meta property="og:description" content="Can we detect common objects in a variety of image domains without instance-level annotations? In this paper, we present a framework for a novel task, cross-domain weakly supervised object detection, which addresses this question. For this study, we have access to images with instance-level annotations in a source domain (e.g., natural image) and images with image-level annotations in a target domain (e.g., watercolor). In addition, all the target domain classes to be detected or a subset of them are in the source domain. Starting from a fully supervised object detector, which is pre-trained on the source domain, we propose a two-step progressive domain adaptation technique by fine-tuning the detector on two types of artificially and automatically generated samples. We test our methods on our newly collected datasets containing three image domains, and achieve an improvement of approximately 5 to 20 percentage points in terms of mean average precision (mAP) compared to the best-performing baselines." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cross-Domain Weakly-Supervised Object Detection through Progressive Domain Adaptation" />
+    <meta name="twitter:description" content="Can we detect common objects in a variety of image domains without instance-level annotations? In this paper, we present a framework for a novel task, cross-domain weakly supervised object detection, which addresses this question. For this study, we have access to images with instance-level annotations in a source domain (e.g., natural image) and images with image-level annotations in a target domain (e.g., watercolor). In addition, all the target domain classes to be detected or a subset of them are in the source domain. Starting from a fully supervised object detector, which is pre-trained on the source domain, we propose a two-step progressive domain adaptation technique by fine-tuning the detector on two types of artificially and automatically generated samples. We test our methods on our newly collected datasets containing three image domains, and achieve an improvement of approximately 5 to 20 percentage points in terms of mean average precision (mAP) compared to the best-performing baselines." />
+    <meta name="twitter:image" content="https://naoto0804.github.io/cross_domain_detection/dets_watercolor.png" />
+
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -17,43 +39,90 @@
         ga('create', 'UA-115292904-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Naoto Inoue - UTokyo </title>
-    <style type="text/css"></style>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💫</text></svg>">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+        <link rel="stylesheet" href="../files/css/app.css">
+        <link rel="stylesheet" href="../files/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+        <script src="js/app.js"></script>
 </head>
 
 <body>
 
-    <div class="container" style="max-width: 900px;">
-<!-- 
-        <h4 class="text-center"><em><a href="http://cvpr2018.thecvf.com/">IEEE Conference on Computer Vision and Pattern
-                    Recognition (CVPR) 2018</a></em></h4>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                Cross-Domain Weakly-Supervised Object Detection <br> through Progressive Domain Adaptation </br>
+                <small>CVPR 2018</small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li><a href="https://naoto0804.github.io/">Naoto Inoue</a></li>
+                    <li><a href="https://www.hal.t.u-tokyo.ac.jp/~furuta/">Ryosuke Furuta</a></li>
+                    <li><a href="https://www.hal.t.u-tokyo.ac.jp/~yamasaki/index-e.html">Toshihiko Yamasaki</a></li>
+                    <li><a href="https://www.hal.t.u-tokyo.ac.jp/~aizawa/">Kiyoharu Aizawa</a></li>
+                </ul>
+            </div>
+            <div class="col-md-12 text-center">
+                The University of Tokyo, Japan
+            </div>
+        </div>
 
-        <br> -->
-
-        <h2 class="text-center">Cross-Domain Weakly-Supervised Object Detection through Progressive Domain Adaptation
-        </h2>
-
-        <h3 class="text-center"><a href="https://naoto0804.github.io/">Naoto Inoue</a>, <a
-                href="https://www.hal.t.u-tokyo.ac.jp/~furuta/">Ryosuke Furuta</a>, <a
-                href="https://www.hal.t.u-tokyo.ac.jp/~yamasaki/index-e.html">Toshihiko Yamasaki</a>, <a
-                href="https://www.hal.t.u-tokyo.ac.jp/~aizawa/">Kiyoharu Aizawa</a></h3>
-
-        <h3 class="text-center">The University of Tokyo, Japan</h3>
-
-        <h3 class="text-center"><a href="https://arxiv.org/abs/1803.11365">[Paper]   </a><a
-            href="https://github.com/naoto0804/cross-domain-detection">   [Code/Dataset]</a></h3>
+        <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/1803.11365">
+                            <image src="../files/icon/description.svg" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://storage.googleapis.com/gresearch/refraw360/360_v2.zip" target="popup" onclick="window.open('http://storage.googleapis.com/gresearch/refraw360/360_v2.zip','popup','width=600,height=400')">
+                            <image src="../files/icon/database.svg" height="60px">
+                                <h4><strong>Dataset</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/naoto0804/cross-domain-detection">
+                            <image src="../files/icon/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1AXhwDfgzgfMD8W2s4y1f8rUSzErsL5yg/view">
+                            <image src="../files/icon/co_present.svg" height="60px">
+                                <h4><strong>Poster</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1v1IJDCJpVBjQhNZY3nSGJcfVX6tFo4ho/view">
+                            <image src="../files/icon/slideshow.svg" height="60px">
+                                <h4><strong>Slide(ja)</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
 
         <br>
 
         <br>
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-8">
                         <p class="text-center">
                             <img src="teaser.png" class="img-rounded" height=250px>
                         </p>
@@ -61,7 +130,7 @@
                             generate
                             pseudo instance-level annotated samples. </p>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <p class="text-center"><img src="dets_watercolor.png"
                                 class="img-rounded" height=250px></p>
                         <p class="text-center">The detection results in our Watercolor1k dataset.</p>
@@ -74,32 +143,51 @@
         </div>
         <br>
 
-
-        <h3>Abstract</h3>
         <div class="row">
-            <div class="col-md-12">
-                <p>
-                    Can we detect common objects in a variety of image domains without instance-level annotations?
-                    In this paper, we present a framework for a novel task, cross-domain weakly supervised object
-                    detection,
-                    which addresses this question.
-                    For this study, we have access to images with instance-level annotations in a source domain (e.g.,
-                    natural image) and images with image-level annotations in a target domain (e.g., watercolor).
-                    In addition, all the target domain classes to be detected or a subset of them are in the source
-                    domain.
-                    Starting from a fully supervised object detector, which is pre-trained on the source domain, we
-                    propose
-                    a two-step progressive domain adaptation technique by fine-tuning the detector on two types of
-                    artificially and automatically generated samples.
-                    We test our methods on our newly collected datasets containing three image domains, and achieve an
-                    improvement of approximately 5 to 20 percentage points in terms of mean average precision (mAP)
-                    compared
-                    to the best-performing baselines.
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Can we detect common objects in a variety of image domains without instance-level annotations? In this paper, we present a framework for a novel task, cross-domain weakly supervised object detection, which addresses this question. For this study, we have access to images with instance-level annotations in a source domain (e.g., natural image) and images with image-level annotations in a target domain (e.g., watercolor). In addition, all the target domain classes to be detected or a subset of them are in the source domain. Starting from a fully supervised object detector, which is pre-trained on the source domain, we propose a two-step progressive domain adaptation technique by fine-tuning the detector on two types of artificially and automatically generated samples. We test our methods on our newly collected datasets containing three image domains, and achieve an improvement of approximately 5 to 20 percentage points in terms of mean average precision (mAP) compared to the best-performing baselines.
                 </p>
             </div>
         </div>
 
-        <h3>Resources</h3>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@inproceedings{inoue_2018_cvpr,
+    author = {Inoue, Naoto and Furuta, Ryosuke and Yamasaki, Toshihiko and Aizawa, Kiyoharu},
+    title = {Cross-Domain Weakly-Supervised Object Detection Through Progressive Domain Adaptation},
+    booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year = {2018},
+    pages = {5001-5009},
+}</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                This work was partially supported by JST-CREST (JPMJCR1686) and Microsoft IJARC core13.
+                N. Inoue is supported by GCL program of The Univ. of Tokyo by JSPS.
+                R. Furuta is supported by the Grants-in-Aid for Scientific Research (16J07267) from JSPS.
+                <br>
+                The website template was borrowed from <a href="https://jonbarron.info/mipnerf360/">Mip-NeRF 360</a>.
+                </p>
+            </div>
+        </div>
+
+        <!-- <h3>Resources</h3>
         <div class="row">
             <div class="col-md-12">
                 <ul>
@@ -110,44 +198,7 @@
                     <li><a href="https://drive.google.com/file/d/1v1IJDCJpVBjQhNZY3nSGJcfVX6tFo4ho/view">slide(ja)</a></li>
                 </ul>
             </div>
-        </div>
-
-        <!-- <h3>Publication</h3>
-        <div class="row">
-            <div class="col-md-12">
-                <ul>
-                    <li>Naoto Inoue, Ryosuke Furuta, Toshihiko Yamasaki, Kiyoharu Aizawa<br>
-                        <strong>Cross-Domain Weakly-Supervised Object Detection through Progressive Domain
-                            Adaptation</strong><br>
-                        <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR),</em> 2018.
-                    </li>
-                </ul>
-            </div>
         </div> -->
-
-        <h3>BibTeX</h3>
-        <div class="row">
-            <div class="col-md-12">
-                <pre>@inproceedings{inoue_2018_cvpr,
-        author = {Inoue, Naoto and Furuta, Ryosuke and Yamasaki, Toshihiko and Aizawa, Kiyoharu},
-        title = {Cross-Domain Weakly-Supervised Object Detection Through Progressive Domain Adaptation},
-        booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-        year = {2018},
-        pages = {5001-5009},
-    }</pre>
-            </div>
-        </div>
-
-        <h3>Acknowledgments</h3>
-        <div class="row">
-            <div class="col-md-12">
-                <p>
-                    This work was partially supported by JST-CREST (JPMJCR1686) and Microsoft IJARC core13.
-                    N. Inoue is supported by GCL program of The Univ. of Tokyo by JSPS.
-                    R. Furuta is supported by the Grants-in-Aid for Scientific Research (16J07267) from JSPS.
-                </p>
-            </div>
-        </div>
     </div>
 </body>
 
